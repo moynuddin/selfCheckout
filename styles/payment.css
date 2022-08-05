@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Poppins:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navigations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c65ad;
+  padding: 0 25px;
+}
+.navigations .brand img {
+  width: 70px;
+}
+.navigations nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  color: #fff;
+}
+
+.payment-container .heading {
+  text-align: center;
+  padding: 20px;
+}
+.payment-container .payment-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 60px;
+}
+.payment-container .payment-options .payment {
+  display: flex;
+  gap: 20px;
+}
+.payment-container .payment-options .payment .card {
+  border: 1px solid transparent;
+  padding: 60px;
+  box-shadow: 4px 4px 8px 0px #bdc8c5;
+}/*# sourceMappingURL=payment.css.map */
