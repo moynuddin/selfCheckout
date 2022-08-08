@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Poppins:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navigations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c65ad;
+  padding: 0 25px;
+}
+.navigations .brand img {
+  width: 70px;
+}
+.navigations nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  color: #fff;
+}
+
+.input-wrapper {
+  margin: 20px 0px 0px 80px;
+}
+.input-wrapper input {
+  min-width: 43%;
+  height: 50px;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .left {
+  width: 50%;
+}
+.container .image_wrapper {
+  width: 50%;
+  padding: 10px;
+}
+.container .image_wrapper img {
+  width: 100%;
+}
+.container .image_wrapper input {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #1c65ad;
+}
+
+.outer_wrapper {
+  border: 2px black solid;
+  width: 70%;
+  margin: 20px;
+  box-shadow: 2px 4px 10px gray;
+}
+.outer_wrapper .wrapper {
+  margin: 20px;
+}
+.outer_wrapper .wrapper .order_details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.outer_wrapper .wrapper h3 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.outer_wrapper .wrapper input {
+  width: 340px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.outer_wrapper .wrapper .apply_btn {
+  height: 45px;
+  width: 100px;
+  background-color: #1c65ad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.outer_wrapper .wrapper h2 {
+  color: #1c65ad;
+  padding-bottom: 10px;
+}
+.outer_wrapper .wrapper .details {
+  background-color: rgb(244, 244, 236);
+  border-radius: 10px;
+  padding: 15px;
+}
+.outer_wrapper .wrapper .details .order_details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.outer_wrapper .wrapper .details #last_order {
+  background-color: #1c65ad;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+.outer_wrapper .wrapper .pay_btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.outer_wrapper .wrapper .pay_btn .payment_btn {
+  height: 45px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}
+.outer_wrapper .wrapper .pay_btn .cancel_btn {
+  height: 45px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}/*# sourceMappingURL=scanitems.css.map */
