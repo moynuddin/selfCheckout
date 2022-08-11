@@ -52,12 +52,12 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.wrapper .dailpad .container {
+.wrapper .dailpad .number-container {
   text-align: center;
   background: #c7c7c3;
   border-radius: 10px;
 }
-.wrapper .dailpad .container .numbers {
+.wrapper .dailpad .number-container .numbers {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   gap: 10px;
@@ -67,7 +67,7 @@ h2 {
   padding: 20px;
   border-radius: 10px;
 }
-.wrapper .dailpad .container .numbers input {
+.wrapper .dailpad .number-container .numbers input {
   height: 30px;
   border: none;
   outline: none;
@@ -77,21 +77,21 @@ h2 {
   border: 2px solid rgb(224, 224, 224);
   padding: 25px;
 }
-.wrapper .dailpad .container .numbers .number {
+.wrapper .dailpad .number-container .numbers .number {
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgb(245, 245, 245);
   border-radius: 10px;
 }
-.wrapper .dailpad .container .numbers .number:nth-child(14) {
+.wrapper .dailpad .number-container .numbers .number:nth-child(14) {
   background: rgb(209, 4, 4);
   color: #fff;
 }
-.wrapper .dailpad .container .numbers .number:nth-child(15) {
+.wrapper .dailpad .number-container .numbers .number:nth-child(15) {
   background: rgb(64, 123, 254);
   color: #fff;
 }
-.wrapper .dailpad .container .numbers .number:nth-child(16) {
+.wrapper .dailpad .number-container .numbers .number:nth-child(16) {
   background: rgb(0, 255, 38);
 }/*# sourceMappingURL=home.css.map */

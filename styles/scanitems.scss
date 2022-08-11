@@ -27,133 +27,114 @@
     }
   }
 }
-.input-wrapper{
-    margin: 20px 0px 0px 80px;
-    & input{
-        min-width: 43%;
-        height: 50px;
-        outline: none;
-        padding-left: 10px;
-        border-radius: 5px;
-        font-size: 15px;
-    }
+.input-wrapper {
+  margin: 20px 0px 0px 80px;
+  & input {
+    height: 50px;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 91%;
+  }
 }
-.container{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    
-    & .left{
-       
-        width: 50%;
-        // height: 100vh;
-    }
-    & .image_wrapper{
-        // background-color: pink;
-        width: 50%;
-        padding: 10px;
-        
-        & img{
-            width: 100%;
-            // height: 500px;
-            // padding-top: 20px;
-        }
-        & input{
-            width: 100%;
-            height: 45px;
-            border-radius:5px;
-            padding: 10px;
-            font-size: 15px;
-            border: 1px solid #1c65ad;
-        }
-    }
+.right {
+  flex-grow: 1;
+  margin-left: 75px;
 }
-.outer_wrapper{
-    border: 2px black solid;
-    width: 70%;
-    margin: 20px;
-    box-shadow: 2px 4px 10px gray;
-    & .wrapper{
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+
+  & .left {
+    width: 40%;
+
+    .outer_wrapper {
+      border: 2px solid transparent;
+      width: 76%;
+      box-shadow: 2px 4px 10px gray;
+      border-radius: 10px;
+      & .wrapper {
         margin: 20px;
-        & .order_details{
+        & .order_details {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 0px;
+        }
+        & h3 {
+          padding-top: 15px;
+          padding-bottom: 10px;
+        }
+        & input {
+          width: 220px;
+          height: 45px;
+          padding: 10px;
+          border-radius: 5px;
+          font-size: 15px;
+        }
+        & .apply_btn {
+          height: 45px;
+          width: 100px;
+          background-color: #1c65ad;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        & h2 {
+          padding-bottom: 10px;
+          & span {
+            color: #1c65ad;
+          }
+        }
+        & .details {
+          background-color: rgb(244, 244, 236);
+          border-radius: 10px;
+          padding: 15px;
+          & .order_details {
             display: flex;
             justify-content: space-between;
             padding: 10px 0px;
-        }
-        & h3{
-            padding-top: 15px;
-            padding-bottom: 10px;
-            
-        }
-        & input{
-            width: 340px;
-            height: 45px;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 15px;
-            // border: none;
-
-        }
-        & .apply_btn{
-            height: 45px;
-            width: 100px;
+          }
+          & #last_order {
             background-color: #1c65ad;
+            border-radius: 3px;
+            padding: 8px;
             color: white;
+          }
+        }
+        & .pay_btn {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          margin-top: 20px;
+          gap: 20px;
+          & .payment_btn {
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            font-size: 15px;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          & .cancel_btn {
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+            padding: 8px;
+            font-size: 15px;
             border: none;
             border-radius: 5px;
+            cursor: pointer;
+          }
         }
-        // & h3{
-        //     padding-bottom: 10px;
-        // }
-        & h2{
-            color: #1c65ad;
-            padding-bottom: 10px;
-        }
-        & .details{
-            background-color: rgb(244, 244, 236);
-            border-radius: 10px;
-            padding: 15px;
-            & .order_details{
-                display: flex;
-                justify-content: space-between;
-                padding: 10px 0px;
-            }
-            & #last_order{
-                background-color: #1c65ad;
-                border-radius: 5px;
-                padding: 5px;
-                color: white;
-            }
-            
-
-        }
-        & .pay_btn{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            & .payment_btn{
-                height: 45px;
-                width: 200px;
-                border-radius: 5px;
-                background-color: green;
-                color: white;
-                font-size: 15px;
-                border: none;
-                border-radius: 5px;
-                
-            }
-            & .cancel_btn{
-                height: 45px;
-                width: 200px;
-                border-radius: 5px;
-                background-color: red;
-                color: white;
-                font-size: 15px;
-                border: none;
-                border-radius: 5px;
-            }
-        }
+      }
     }
-  
+  }
 }

@@ -32,119 +32,150 @@
   padding-left: 10px;
   border-radius: 5px;
   font-size: 15px;
-  width: 48%;
+  width: 91%;
 }
 
-.scanitem_wrapper {
-  width: 50%;
-  background: aliceblue;
+.right {
+  flex-grow: 1;
+  margin-left: 75px;
 }
-.scanitem_wrapper .item_details {
+.right .list-wrapper {
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+.right .list-wrapper .list {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background-color: #ecedf6;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+.right .list-wrapper .list .title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #1c65ad;
-  color: white;
-  font-size: 15px;
-  width: 90%;
-  padding: 10px;
-  height: 50px;
-  outline: none;
-  border-radius: 5px;
-  margin: 20px 0px 0px 80px;
 }
-.scanitem_wrapper .items_no {
-  border: 1px solid black;
-  border-radius: 5px;
-  margin: 20px 0px 0px 80px;
-  width: 90%;
-  height: 100px;
+.right .list-wrapper .list .title .product-name {
+  font-size: 22px;
+  font-weight: 600;
+  flex-grow: 1;
+}
+.right .list-wrapper .list .title .product-price {
+  min-width: 25%;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: end;
+}
+.right .list-wrapper .list .product-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.right .list-wrapper .list .product-details div {
+  display: flex;
+  gap: 10px;
+}
+.right .list-wrapper .list .product-details div .label {
+  font-weight: 600;
+  color: #1c65ad;
+}
+.right .list-wrapper .list .product-details .fa-solid {
+  color: red;
+  font-size: 24px;
 }
 
 .container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
 }
 .container .left {
-  width: 50%;
+  width: 40%;
 }
-
-.outer_wrapper {
-  border: 2px black solid;
-  width: 70%;
-  margin: 50px;
+.container .left .outer_wrapper {
+  border: 2px solid transparent;
+  width: 76%;
   box-shadow: 2px 4px 10px gray;
+  border-radius: 10px;
 }
-.outer_wrapper .wrapper {
+.container .left .outer_wrapper .wrapper {
   margin: 20px;
 }
-.outer_wrapper .wrapper .order_details {
+.container .left .outer_wrapper .wrapper .order_details {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px;
 }
-.outer_wrapper .wrapper h3 {
+.container .left .outer_wrapper .wrapper h3 {
   padding-top: 15px;
   padding-bottom: 10px;
 }
-.outer_wrapper .wrapper input {
-  width: 340px;
+.container .left .outer_wrapper .wrapper input {
+  width: 220px;
   height: 45px;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
 }
-.outer_wrapper .wrapper .apply_btn {
+.container .left .outer_wrapper .wrapper .apply_btn {
   height: 45px;
   width: 100px;
   background-color: #1c65ad;
   color: white;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
-.outer_wrapper .wrapper h2 {
-  color: #1c65ad;
+.container .left .outer_wrapper .wrapper h2 {
   padding-bottom: 10px;
 }
-.outer_wrapper .wrapper .details {
+.container .left .outer_wrapper .wrapper h2 span {
+  color: #1c65ad;
+}
+.container .left .outer_wrapper .wrapper .details {
   background-color: rgb(244, 244, 236);
   border-radius: 10px;
   padding: 15px;
 }
-.outer_wrapper .wrapper .details .order_details {
+.container .left .outer_wrapper .wrapper .details .order_details {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px;
 }
-.outer_wrapper .wrapper .details #last_order {
+.container .left .outer_wrapper .wrapper .details #last_order {
   background-color: #1c65ad;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 3px;
+  padding: 8px;
   color: white;
 }
-.outer_wrapper .wrapper .pay_btn {
+.container .left .outer_wrapper .wrapper .pay_btn {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   margin-top: 20px;
+  gap: 20px;
 }
-.outer_wrapper .wrapper .pay_btn .payment_btn {
-  height: 45px;
-  width: 200px;
+.container .left .outer_wrapper .wrapper .pay_btn .payment_btn {
   border-radius: 5px;
   background-color: green;
   color: white;
   font-size: 15px;
   border: none;
+  padding: 8px;
   border-radius: 5px;
+  cursor: pointer;
 }
-.outer_wrapper .wrapper .pay_btn .cancel_btn {
-  height: 45px;
-  width: 200px;
+.container .left .outer_wrapper .wrapper .pay_btn .cancel_btn {
   border-radius: 5px;
   background-color: red;
   color: white;
+  padding: 8px;
   font-size: 15px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }/*# sourceMappingURL=scanitems2.css.map */
