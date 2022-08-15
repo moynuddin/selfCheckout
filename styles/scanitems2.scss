@@ -51,7 +51,7 @@
       background-color: #ecedf6;
       border-radius: 10px;
       padding: 20px;
-      gap: 60px;
+      gap: 20px;
       margin-bottom: 20px;
       & .title {
         display: flex;
@@ -85,10 +85,14 @@
           font-size: 24px;
         }
       }
+      & .line {
+        border-top: 2px dashed rgb(180, 176, 176);
+        padding-top: 15px;
+      }
     }
   }
 }
-.container {
+.items-container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -138,7 +142,7 @@
           }
         }
         & .details {
-          background-color: rgb(244, 244, 236);
+          background-color: rgb(236 237 246);
           border-radius: 10px;
           padding: 15px;
           & .order_details {
@@ -181,6 +185,47 @@
           }
         }
       }
+    }
+  }
+}
+.header {
+  background-color: #fffeb2;
+}
+.form-check-input {
+  border-radius: 50% !important;
+  font-size: 25px !important;
+}
+
+table {
+  & tr {
+    text-align: center;
+    & .content {
+      text-align: left !important;
+      width: 40%;
+      background-color: rgb(255, 209, 152);
+    }
+    & td:nth-child(2) {
+      background-color: rgb(207, 170, 124);
+    }
+    & td:nth-child(3) {
+      background-color: rgb(163, 133, 97);
+    }
+    & td:nth-child(4) {
+      background-color: rgb(122, 101, 75);
+    }
+  }
+  & tr {
+    & th:first-child {
+      background-color: rgb(255, 209, 152);
+    }
+    & th:nth-child(2) {
+      background-color: rgb(207, 170, 124);
+    }
+    & th:nth-child(3) {
+      background-color: rgb(163, 133, 97);
+    }
+    & th:nth-child(4) {
+      background-color: rgb(122, 101, 75);
     }
   }
 }

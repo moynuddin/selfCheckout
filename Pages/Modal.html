@@ -42,7 +42,7 @@
       aria-labelledby="successModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header border-bottom-0 bg-success p-2"></div>
           <div class="modal-body p-0 mt-2">
@@ -98,7 +98,7 @@
       aria-labelledby="errorModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <button
@@ -114,7 +114,7 @@
               <i class="fa-solid fa-circle-xmark m-0 text-danger"></i>
             </p>
             <p class="text-center text-muted">
-              Transaction failed plese try again!
+              Transaction failed please try again!
             </p>
           </div>
           <div class="modal-footer justify-content-center">
@@ -124,6 +124,72 @@
               data-bs-dismiss="modal"
             >
               Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scan items modal -->
+
+    <button
+      class="btn btn-warning"
+      data-bs-toggle="modal"
+      data-bs-target="#scanModal"
+    >
+      Scan popup
+    </button>
+
+    <div
+      class="modal fade"
+      id="scanModal"
+      tabindex="-1"
+      aria-labelledby="scanModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0 p-2"></div>
+          <div class="modal-body p-0 mt-2">
+            <p class="text-lg-center text-dark fw-bolder py-2">
+              Please enter or scan the serial number.
+            </p>
+
+            <div
+              class="text-center d-flex justify-content-center align-items-center px-3"
+            >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter serial number"
+              />
+            </div>
+            <div class="p-3 fw-semibold">
+              <div
+                class="d-flex justify-content-between align-items-center gap-3 bg-light p-2 mb-2"
+              >
+                <span>Serial Number</span>
+                <span class="text-primary fw-bolder"
+                  >KX-T2371-MXW-PANASONIC KX-T2371-MXW</span
+                >
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center gap-3 bg-light p-2"
+              >
+                <span>Item Description</span>
+                <span class="text-primary"
+                  >Telephone advance ist telephone</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-top-0 justify-content-center">
+            <button
+              type="button"
+              class="btn btn-secondary px-4"
+              data-bs-dismiss="modal"
+            >
+              Add
             </button>
           </div>
         </div>

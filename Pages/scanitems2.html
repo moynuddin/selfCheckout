@@ -13,6 +13,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="navigations">
@@ -30,7 +41,7 @@
     <div class="input-wrapper">
       <input type="text" placeholder="Scan Items" />
     </div>
-    <div class="container">
+    <div class="items-container">
       <div class="left">
         <div class="outer_wrapper">
           <div class="wrapper">
@@ -95,6 +106,15 @@
               </div>
               <i class="fa-solid fa-trash"></i>
             </div>
+            <div class="text-center d-flex justify-content-center line">
+              <p
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#itemModal"
+              >
+                Add Service
+              </p>
+            </div>
           </div>
           <div class="list">
             <div class="title">
@@ -215,6 +235,102 @@
               </div>
               <i class="fa-solid fa-trash"></i>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="itemModal"
+      tabindex="-1"
+      aria-labelledby="itemModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0 p-2"></div>
+          <div class="modal-body p-0 mt-2">
+            <div
+              class="d-flex justify-content-between align-items-center p-4 mx-4 header"
+            >
+              <div>
+                <img src="../assets/ExtraSafeguardLogo.png" alt="" />
+              </div>
+              <div class="d-flex flex-column align-items-center fw-semibold">
+                <p>Essentials <small class="text-muted"> (3 years)</small></p>
+                <p>42 SR</p>
+                <input type="checkbox" class="form-check-input" />
+              </div>
+              <div class="d-flex flex-column align-items-center fw-semibold">
+                <p>Favourite <small class="text-muted">(4 years)</small></p>
+                <p>62 SR</p>
+                <input type="checkbox" class="form-check-input" />
+              </div>
+              <div class="d-flex flex-column align-items-center fw-semibold">
+                <p>Premium <small class="text-muted">(5 years)</small></p>
+                <p>84 SR</p>
+                <input type="checkbox" class="form-check-input" />
+              </div>
+              <p class="fw-bold fs-3">42 SR</p>
+            </div>
+            <div class="p-4 bg-muted">
+              <p class="pt-2 text-muted">
+                Every product comes with manufacturing warrenty that civers the
+                basic needs, we understand that you need more peace os mind
+                that's why we design Extra safeguard to provide you with
+                additional benefits extended beyonds the manufacturing warrenty.
+              </p>
+            </div>
+            <div class="p-4">
+              <table class="table align-middle">
+                <tr>
+                  <th class="p-3">Extra Safeguard</th>
+                  <th class="p-3">Essentials</th>
+                  <th class="p-3">Favourites</th>
+                  <th class="p-3">Premium</th>
+                </tr>
+                <tr>
+                  <td colspan="5" class="bg-black text-light content">
+                    What's included
+                  </td>
+                </tr>
+                <tr class="fw-semibold">
+                  <td class="content">
+                    Protected
+                    <p>
+                      We can extend your product warrenty period over 3.4 or 5
+                      years ~ given you extra peace of mind
+                    </p>
+                  </td>
+                  <td>3 years</td>
+                  <td>4 years</td>
+                  <td>5 years</td>
+                </tr>
+                <tr class="fw-semibold">
+                  <td class="content">
+                    Home Screen
+                    <p>
+                      We can even fix your device at your home ~ with convenient
+                      times to suit you.
+                    </p>
+                  </td>
+                  <td>3 years</td>
+                  <td>4 years</td>
+                  <td>5 years</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer border-top-0 justify-content-center">
+            <button
+              type="button"
+              class="btn btn-secondary px-4"
+              data-bs-dismiss="modal"
+            >
+              close
+            </button>
           </div>
         </div>
       </div>
