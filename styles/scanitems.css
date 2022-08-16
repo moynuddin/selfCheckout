@@ -36,8 +36,10 @@
 }
 
 .right {
-  flex-grow: 1;
-  margin-left: 75px;
+  width: 50%;
+}
+.right img {
+  width: 100%;
 }
 
 .items-container {
@@ -48,13 +50,18 @@
   margin-top: 20px;
 }
 .items-container .left {
-  width: 40%;
+  width: 50%;
+  margin-left: 35px;
+  display: flex;
+  justify-content: center;
 }
 .items-container .left .outer_wrapper {
   border: 2px solid transparent;
-  width: 76%;
+  width: 370px;
+  height: 600px;
   box-shadow: 2px 4px 10px gray;
   border-radius: 10px;
+  margin-left: 75px;
 }
 .items-container .left .outer_wrapper .wrapper {
   margin: 20px;

@@ -39,8 +39,10 @@
   }
 }
 .right {
-  flex-grow: 1;
-  margin-left: 75px;
+  width: 50%;
+  & img {
+    width: 100%;
+  }
 }
 .items-container {
   display: flex;
@@ -50,13 +52,18 @@
   margin-top: 20px;
 
   & .left {
-    width: 40%;
+    width: 50%;
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
 
     .outer_wrapper {
       border: 2px solid transparent;
-      width: 76%;
+      width: 370px;
+      height: 600px;
       box-shadow: 2px 4px 10px gray;
       border-radius: 10px;
+      margin-left: 75px;
       & .wrapper {
         margin: 20px;
         & .order_details {
