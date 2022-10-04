@@ -96,29 +96,28 @@
     >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header bg-danger">
             <button
               type="button"
-              class="btn-close"
+              class="btn-close bg-white"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
           <div class="modal-body">
-            <p class="text-center fs-2 p-0 m-0 text-danger">Sorry!</p>
             <p class="text-center fs-2 p-0 m-0">
               <i class="fa-solid fa-circle-xmark m-0 text-danger"></i>
             </p>
+            <p class="text-center fs-2 p-0 m-0 text-danger">
+              Something went wrong!
+            </p>
+
             <p class="text-center text-muted">
               Transaction failed please try again!
             </p>
           </div>
-          <div class="modal-footer justify-content-center">
-            <button
-              type="button"
-              class="btn btn-danger"
-              data-bs-dismiss="modal"
-            >
+          <div class="modal-footer justify-content-center bg-danger">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">
               Close
             </button>
           </div>

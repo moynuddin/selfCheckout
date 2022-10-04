@@ -36,11 +36,11 @@
 }
 
 .right {
-  flex-grow: 1;
+  width: 55%;
   margin-left: 75px;
 }
 .right .list-wrapper {
-  max-height: 80vh;
+  max-height: 75vh;
   overflow-y: scroll;
 }
 .right .list-wrapper .list {
@@ -51,7 +51,7 @@
   border-radius: 10px;
   padding: 20px;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .right .list-wrapper .list .title {
   display: flex;
@@ -107,7 +107,7 @@
   border-radius: 10px;
 }
 .items-container .left .outer_wrapper .wrapper {
-  margin: 20px;
+  margin: 15px;
 }
 .items-container .left .outer_wrapper .wrapper .order_details {
   display: flex;
@@ -116,7 +116,7 @@
 }
 .items-container .left .outer_wrapper .wrapper h3 {
   padding-top: 15px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 .items-container .left .outer_wrapper .wrapper input {
   width: 220px;
@@ -131,6 +131,7 @@
   background-color: #1c65ad;
   color: white;
   border: none;
+  margin-top: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -148,7 +149,7 @@
 .items-container .left .outer_wrapper .wrapper .details .order_details {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 .items-container .left .outer_wrapper .wrapper .details #last_order {
   background-color: #1c65ad;
@@ -161,7 +162,7 @@
   justify-content: space-between;
   flex-direction: column;
   margin-top: 20px;
-  gap: 20px;
+  gap: 10px;
 }
 .items-container .left .outer_wrapper .wrapper .pay_btn .payment_btn {
   border-radius: 5px;
@@ -221,32 +222,39 @@ table tr th:nth-child(3) {
 }
 table tr th:nth-child(4) {
   background-color: rgb(122, 101, 75);
-}/*# sourceMappingURL=scanitems2.css.map */
-.imgContainer{
-  border: 1px solid black;
-  height: 650px;
 }
+
 .imgBox1{
-  border: 1px solid black;
-  display: flex;
-}
-.imgBox2{
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-}
-.box{
-  border: 1px solid black;
-  height: 300px;
-  width: 280px;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fffeb2;
+}
+.imgBox2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.box{
+  padding: 20px;
+  border-right: 2px dashed #c1c1c1;
+  border-bottom: 2px dashed #c1c1c1;
+  cursor: pointer;
+}
 
+.box:hover{
+  background-color: #89bbec;
+}
+.box:active{
+  background-color: green;
+}
+
+.box:last-child{
+  border-right: none;
 }
 .imgscreen{
-  height:200px;
-  width: 250px; 
+  width: 200px; 
+  height: 150px;
 
  }
