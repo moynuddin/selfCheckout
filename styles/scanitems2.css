@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Poppins:wght@300;600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 .navigations {
@@ -46,7 +44,6 @@
 .right .list-wrapper .list {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", sans-serif;
   background-color: #ecedf6;
   border-radius: 10px;
   padding: 20px;
